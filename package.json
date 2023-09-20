@@ -1,6 +1,6 @@
 {
   "name": "better-sqlite3-default-extensions-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper for better-sqlite3 that allows you to load extensions by default.",
   "main": "index.js",
   "scripts": {
