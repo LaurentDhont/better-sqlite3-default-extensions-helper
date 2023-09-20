@@ -6,6 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Laurent Dhont (LDIT BV)",
+  "author": "Laurent Dhont (https://www.ldit.vlaanderen)",
   "license": "ISC"
 }
