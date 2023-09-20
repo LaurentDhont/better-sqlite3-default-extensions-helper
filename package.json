@@ -1,11 +1,29 @@
 {
   "name": "better-sqlite3-default-extensions-helper",
   "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LaurentDhont/better-sqlite3-default-extensions-helper.git"
+  },
+  "homepage": "https://github.com/LaurentDhont/better-sqlite3-default-extensions-helper",
   "description": "A helper for better-sqlite3 that allows you to load extensions by default.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Laurent Dhont (https://www.ldit.vlaanderen)",
-  "license": "ISC"
+  "author": "Laurent Dhont <laurent@ldit.vlaanderen> (https://www.ldit.vlaanderen)",
+  "license": "ISC",
+  "keywords": [
+    "sql",
+    "sqlite",
+    "sqlite3",
+    "transactions",
+    "user-defined functions",
+    "aggregate functions",
+    "window functions",
+    "database",
+    "better-sqlite3",
+    "helper",
+    "extensions"
+  ]
 }
