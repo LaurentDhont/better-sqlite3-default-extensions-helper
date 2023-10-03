@@ -11,7 +11,7 @@ module.exports = (DatabaseClass) => {
                 let baseDirectory;
 
                 // if the env variable is set use that directory
-                if (process.env.DEFAULT_SQLITE_EXTENSIONS) {
+                if (process.env.DEFAULT_SQLITE_EXTENSIONS_PATH) {
                     baseDirectory = process.env.DEFAULT_SQLITE_EXTENSIONS_PATH;
                 }
                 // use the directory in root of project designated for better-sqlite3-extensions
