@@ -1,6 +1,6 @@
 {
   "name": "better-sqlite3-default-extensions-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/LaurentDhont/better-sqlite3-default-extensions-helper.git"
