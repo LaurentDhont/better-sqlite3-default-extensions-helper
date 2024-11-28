@@ -1,7 +1,7 @@
-const path = require('path');
-const fs = require('fs');
+import path from 'path';
+import fs from 'fs';
 
-module.exports = (DatabaseClass) => {
+export default function (DatabaseClass) {
     return class Database extends DatabaseClass {
         constructor(filenameGiven, options) {
             super(filenameGiven, options);
@@ -14,14 +14,10 @@ module.exports = (DatabaseClass) => {
                 if (process.env.DEFAULT_SQLITE_EXTENSIONS_PATH) {
                     baseDirectory = process.env.DEFAULT_SQLITE_EXTENSIONS_PATH;
                 }
-                // use the directory in root of project designated for better-sqlite3-extensions
-                else {
-                    baseDirectory = path.join(require.main.path, 'better-sqlite3-extensions');
-                }
 
-                const extensions = fs.readdirSync(baseDirectory).map(value => path.join(baseDirectory, value));
+                if (baseDirectory && fs.existsSync(baseDirectory)) {
+                    const extensions = fs.readdirSync(baseDirectory).map(value => path.join(baseDirectory, value));
 
-                if (fs.existsSync(baseDirectory)) {
                     for (const extension of extensions) {
                         try {
                             this.loadExtension(extension);

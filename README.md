@@ -4,7 +4,6 @@ This library allows you to load default extension by default for better-sqlite3
 ## How to use
 
 Simply put the extensions you want to use in:
-- a folder called `better-sqlite3-extensions` in the root of your project
 - a folder that you specify in an **environment variable** named `DEFAULT_SQLITE_EXTENSIONS_PATH`
 
 ```js
